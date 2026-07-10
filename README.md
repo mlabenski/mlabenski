@@ -1,25 +1,8 @@
 # 👋 Welcome to My GitHub
 
-**Systems Integration Analyst** | Full-Stack Developer | Cloud & Security Enthusiast
-
----
 
 ## About Me
 
-I'm a software developer and systems integration specialist with a track record of building scalable solutions that drive measurable business impact. My background spans cloud infrastructure, payment systems, and full-stack development—with expertise in modern frameworks like Swift, Vue, Angular, and Python.
-
-I've architected internal platforms that reduced operational cycles by **>85%**, delivering end-to-end solutions from event-driven backends to cross-platform applications. I'm equally comfortable with payment gateways, cloud infrastructure, or front-end software.
-
-
----
-
-## 🎓 Certifications
-- **AWS Certified Cloud Practitioner**
-- **CompTIA Security+**
-
----
-
-## 💼 Professional Experience
 
 ### Software
 - **Platform Architecture**: Built end-to-end application with event-driven core, repository/service-layer design, SQLite persistence, and cross-platform GUI
