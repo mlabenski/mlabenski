@@ -1,82 +1,76 @@
-# 👋 Welcome to My GitHub
+<!-- Profile README · lives in the repo named mlabenski/mlabenski -->
 
+<div align="center">
 
-## About Me
+# Hey, I'm Profile viewer 👋
 
+**Cloud & security engineer building AI into the tools people actually use every day.**
 
-### Software
-- **Platform Architecture**: Built end-to-end application with event-driven core, repository/service-layer design, SQLite persistence, and cross-platform GUI
-  - **Result**: 85%+ reduction in operational review cycles
-- **Technical Leadership**: Subject matter expert on APIs and software integrations
-- **Root Cause Analysis**: Cross-functional collaboration on issue resolution and optimization
+*I spent years hardening infrastructure and certifying payment systems where failure isn't an option — now I bring that same rigor to shipping production LLM applications.*
 
-### Payment Gateway ISO8583 Kernels
-- ** APIs, REST, bits, and byte **: and software integrations
-### Web Development
-- ** Vue 3/Nuxt 3, Firebase, OpenAI API
--- **On github
----
+<br/>
 
-## Featured Projects
+[![💬 Send me a message](https://img.shields.io/badge/💬_Send_me_a_message-direct_line-4FD6C4?style=for-the-badge&labelColor=0B1220)](https://mlabenski.github.io/chat/)
 
-### **Swim Practices** — iOS + Web Application
-Native iOS and web platform for fitness tracking with real-time metrics and AI-powered personalization.
-
-**Tech**: SwiftUI, watchOS, HealthKit, Vue 3/Nuxt 3, Firebase, OpenAI API
-
-**Highlights**:
-- Multi-target Swift codebase with MVVM architecture and reactive data patterns
-- **RAG Pipeline**: AI-powered content generation with historical context integration
-
-### **GeebOff** — Streaming Platform
-Real-time video and content streaming platform with advanced WebRTC capabilities.
-
-**Tech**: Vue.js, TypeScript
-
-**Key Repos**:
-### **Hydrate Homie** — Service Platform
-Full-stack application for operational logistics and service delivery.
-
-**Repos**:
-- [Hydrate-Homie](https://github.com/mlabenski/Hydrate-Homie)
-- [hydrate-homie-redone](https://github.com/mlabenski/hydrate-homie-redone)
+</div>
 
 ---
 
-## 🛠️ Current Tech Stack
+## 🏊 Now building — [swimpractices.com](https://swimpractices.com)
 
-- **Frontend**: Vue 3, TypeScript, SwiftUI
-- **Backend**: Python, Node.js, Firebase
-- **Database**: Firestore, SQLite
-- **AI/ML**: OpenAI API, prompt engineering, RAG pipelines
-- **DevOps**: AWS, Cloud Functions, CI/CD
+An AI swim-practice generator that coaches actually rely on. Not a demo — a production GenAI system:
 
----
+- **Schema-guided prompting → structured JSON output**, holding **100% valid JSON across thousands of generations**
+- **RAG pipeline** grounding every practice in real coaching methodology
+- **Token-cost optimization** so the economics work at scale, not just in a notebook
+- **Firestore** as the live data layer, **AWS** underneath
 
-## 🎮 Interests
+```mermaid
+flowchart LR
+    U[Coach] --> W[Web app]
+    W --> P[Prompt layer<br/>schema-guided]
+    P --> L[LLM]
+    R[(RAG store<br/>coaching corpus)] --> P
+    L --> V{JSON<br/>validator}
+    V -->|valid| F[(Firestore)]
+    V -->|retry| P
+    F --> W
+```
 
-- Full-stack architecture and system design
-- AI/ML integration and prompt engineering
-- Problem-solving
-
----
-
-## 📂 Repository Highlights
-
-Browse my pinned repositories above to explore:
-- **Learning projects**: Angular, observables, routing fundamentals
-- **Production applications**: GeebOff, Swim Practices, service platforms
-- **Infrastructure**: VPN configuration, cloud architecture samples
-- **Experiments**: WebRTC, streaming, real-time sync patterns
+The interesting problem wasn't getting an LLM to write a swim practice — it was getting it to do so *reliably*, in a strict schema, thousands of times in a row, at a cost that makes sense. That's the difference between a prototype and a product.
 
 ---
 
-## 🚀 Let's Connect
+## 💳 Payments-grade engineering
 
-I'm interested in:
-- Full-stack and systems integration challenges
-- Cloud architecture and security
-- AI/ML integration projects
-- Open source contributions
+Before AI, I worked in one of the least forgiving corners of software: **card payment systems**.
 
-*Feel free to explore my repositories and reach out with questions or collaboration ideas!*
+- Completed **chip-card payment kernel certifications (EMV-family)** — the formal, test-lab-verified process behind every tap and dip at a terminal
+- Working fluency in **financial messaging standards used by authorization networks (ISO 8583-class protocols)** — the binary, field-by-field messages that move money in milliseconds
+- The lasting lesson: **specs are contracts.** Every bit is accounted for, every failure mode is defined, and "it usually works" is not a passing grade
+
+That mindset — schema discipline, exhaustive validation, defensive defaults — is exactly what production LLM systems need. It's why my generators emit valid JSON every time.
+
+---
+
+## 🧭 The through-line
+
+| | | |
+|---|---|---|
+| **2020** | Data + instinct | Built predictive models (Python/scikit-learn) as a student — and flagged a security gap in a public-facing system along the way. Analysis and privacy hygiene, from day one. |
+| **2021** | Infrastructure | Designed and hardened AWS network architecture: OpenVPN, subnet segmentation, ACLs — enterprise-grade security at a $12–22/month budget. Constraints breed good architecture. |
+| **Now** | Production AI | LLM application engineering: structured outputs, RAG, cost-aware design, Firestore/AWS backends. Security-first habits applied to a brand-new stack. |
+
+---
+
+## 💬 Talk to me
+
+This profile has its own **self-hosted message line** — a static page on GitHub Pages wired to a serverless backend (swappable between Firestore and AWS Lambda, because of course it is).
+
+**[→ Open the direct line](https://mlabenski.github.io/chat/)**
+
+Messages land straight in my inbox. No forms-as-a-service, no trackers.
+
+<div align="center">
+<sub>⚡ This README is a living build — the chat backend architecture is documented <a href="https://github.com/mlabenski/chat">in its own repo</a>.</sub>
+</div>
