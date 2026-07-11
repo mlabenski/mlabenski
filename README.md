@@ -10,8 +10,6 @@ This profile has its own **self-hosted message line** — a static page on GitHu
 
 **[→ Open the direct line](https://mlabenski.github.io/chat/)**
 
-Messages land straight in my inbox. No forms-as-a-service, no trackers.
-
 <div align="center">
 <sub>⚡ The chat backend architecture is documented <a href="https://github.com/mlabenski/chat">in its own repo</a>.</sub>
 </div>
