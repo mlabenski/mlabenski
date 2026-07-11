@@ -2,25 +2,37 @@
 
 <div align="center">
 
-# Hello, I'm Mitchell LaBenski
+# Hello, I'm Mitchell LaBenski 👋
 
-### 💬 Talk to me
+**Cloud & security engineer building AI into tools people actually use — and swim with.**
 
-This profile has its own **self-hosted message line** a static page on GitHub Pages wired to a serverless backend.
+<br/>
 
-**[→ Open the direct line](https://mlabenski.github.io/chat/)**
+<a href="https://apps.apple.com/us/app/swim-practices/id6752208346">
+  <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download Swim Practices on the App Store" height="44" />
+</a>
+&nbsp;&nbsp;
+<a href="https://mlabenski.github.io/chat/">
+  <img src="https://img.shields.io/badge/💬_Direct_line-leave_me_a_message-4FD6C4?style=for-the-badge&labelColor=0B1220" alt="Open the direct line — leave me a message" height="44" />
+</a>
 
-<div align="center">
-<sub>⚡ The chat backend architecture is documented <a href="https://github.com/mlabenski/chat">in its own repo</a>.</sub>
-</div>
+<br/><br/>
+
+<sub>The direct line is a <b>self-hosted message page</b> — static HTML on GitHub Pages wired to a serverless backend.
+No forms-as-a-service, no trackers. <a href="https://github.com/mlabenski/chat">Architecture in its own repo →</a></sub>
 
 </div>
 
 ---
 
-## Current Project — [swimpractices.com](https://swimpractices.com)
+## 🏊 Now shipping — [Swim Practices](https://swimpractices.com)
 
-A swim-practice generator and workout tracking via Apple Watch. I've logged over 150KM and 60 practices, you can trust that I found all the bugs and annoyances.
+An AI swim-practice generator with Apple Watch workout tracking — on the web at
+[swimpractices.com](https://swimpractices.com) and on the
+[App Store](https://apps.apple.com/us/app/swim-practices/id6752208346).
+
+> **Dogfooded daily** — I've logged over **150 km** and **60 practices** with it myself,
+> so you can trust that I found all the bugs and annoyances.
 
 - **Schema-guided prompting → structured JSON output**, holding **100% valid JSON across thousands of generations**
 - **RAG pipeline** grounding every practice in real coaching methodology
@@ -30,6 +42,7 @@ A swim-practice generator and workout tracking via Apple Watch. I've logged over
 ```mermaid
 flowchart LR
     U[Coach] --> W[Web app]
+    A[iOS + watchOS app] --> F
     W --> P[Prompt layer<br/>schema-guided]
     P --> L[LLM]
     R[(RAG store<br/>coaching corpus)] --> P
@@ -37,8 +50,19 @@ flowchart LR
     V -->|valid| F[(Firestore)]
     V -->|retry| P
     F --> W
+    F --> A
 ```
-I've learned how to "fine-tune" closed loop AI models like GPTo4 and Opus. Plus, this application requires a STRICT json format from a generative AI model. That took a lot of effort and trial-and-error. 
+
+The hard part wasn't getting an LLM to write a swim practice — it was getting closed models
+(GPT-4o, Claude Opus) to hold a **strict JSON contract**, thousands of generations in a row,
+at a cost that makes sense. That took a lot of effort and trial-and-error, and it's the
+difference between a prototype and a product.
+
+<div align="center">
+
+[![Download Swim Practices](https://img.shields.io/badge/📱_Swim_Practices-Download_for_iOS-4FD6C4?style=for-the-badge&labelColor=0B1220)](https://apps.apple.com/us/app/swim-practices/id6752208346)
+
+</div>
 
 ---
 
@@ -60,3 +84,10 @@ Before AI, I worked in one of the least forgiving corners of software: **card pa
 | **Now** | Production AI | LLM application engineering: structured outputs, RAG, cost-aware design, Firestore/AWS backends. Security-first habits applied to a brand-new stack. |
 
 ---
+
+<div align="center">
+
+<sub><code>MSG 0210 · RESP 00 · APPROVED</code> — thanks for stopping by. Questions, ideas, or just hello:
+<a href="https://mlabenski.github.io/chat/">the line is open</a>.</sub>
+
+</div>
