@@ -6,7 +6,7 @@
 
 ### 💬 Talk to me
 
-This profile has its own **self-hosted message line** — a static page on GitHub Pages wired to a serverless backend.
+This profile has its own **self-hosted message line** a static page on GitHub Pages wired to a serverless backend.
 
 **[→ Open the direct line](https://mlabenski.github.io/chat/)**
 
